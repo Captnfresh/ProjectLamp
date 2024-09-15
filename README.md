@@ -228,19 +228,15 @@ To save the index.html file, use Ctrl + S and Ctrl + X to exit
 
 ## Step 8 - Enable PHP on the website
 
-1. Create a PHP test file to confirm that Apache is able to handle and process requests for PHP files
-`nano /var/www/projectlamp/index.php`
-
-2. Add the following php code to enable php on the website
+1. Add the following php code to enable php on the website
 `sudo nano /etc/apache2/mods-enabled/dir.conf`
 ```
 <IfModule mod_dir.c>
-    DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+    DirectoryIndex  index.php index.html index.cgi index.pl index.php index.xhtml index.htm
 </IfModule>
 ```
 `sudo systemctl reload apache2`
 
-`rm index.html`
 
 3. Create a new index.php file inside your custom web root folder
 `nano /var/www/lampproject/index.php`
