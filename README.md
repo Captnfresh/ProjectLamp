@@ -21,7 +21,15 @@ Here’s a step-by-step guide on how to set up a LAMP stack (Linux, Apache, MySQ
 
 3. Select a region close to you and launch an instance of t2.micro family with Linux ubuntu server.
 4. Create a new .pem priavte key(If you don't have one already) and save it securely.
-5. Launch your ec2 instance
+5. Configure your security groups by ensuring that the following ports are allowed:
+
+   SSH (port 22) – for remote access
+   
+   HTTP (port 80) – for web traffic
+   
+   HTTPS (port 443) – for secure web traffic (optional)
+
+6. Launch your ec2 instance
 
     ![image 2](https://github.com/user-attachments/assets/7332235d-db55-4c93-90f6-6d9795d49e64)
 
