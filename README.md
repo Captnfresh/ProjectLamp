@@ -41,7 +41,7 @@ Here’s a step-by-step guide on how to set up a LAMP stack (Linux, Apache, MySQ
 
    `cd downloads`
 
-3. Connect to the instance by running
+2. Connect to the instance by running
    
    `ssh -i your-key.pem ubuntu@(your-ec2-public-ip)`
 
@@ -93,11 +93,11 @@ Congrats! you've just launched your first web browser in the clouds.
     ![image 11](https://github.com/user-attachments/assets/b133fc23-c9f0-44eb-958a-5fe3ba6d7c96)
 
 
-3. Secure MySQL installation:
+2. Secure MySQL installation:
    
    `sudo mysql` 
 
-4. It is recommended that you run a script that comes pre-installed with MySQL. This script will remove some insecure default and lockdown access to your database system.
+3. It is recommended that you run a script that comes pre-installed with MySQL. This script will remove some insecure default and lockdown access to your database system.
 
    `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';`
 
@@ -105,26 +105,26 @@ Congrats! you've just launched your first web browser in the clouds.
 
 
 
-5. Exit the MySQL shell:
+4. Exit the MySQL shell:
    
    `mysql> exit`
 
     ![image 13](https://github.com/user-attachments/assets/4efc1cea-1f97-453b-9829-047dda935e52)
 
 
-6. Start the interactive script:
+5. Start the interactive script:
    
    `sudo mysql_secure_installation`  
 
     ![image 14](https://github.com/user-attachments/assets/4a174ff5-8dbd-4124-9921-d7421d75b81c)
 
 
-7. You'll be prompted to change your default password to a password of your choice, remove anonymous users, disallow root logins etc. Answer y for yes or anything else to continue without enabling.
+6. You'll be prompted to change your default password to a password of your choice, remove anonymous users, disallow root logins etc. Answer y for yes or anything else to continue without enabling.
 
     ![image 15](https://github.com/user-attachments/assets/8395c085-fcce-46b9-899d-31fdd1e5d22b)
 
 
-8. Login into MySQL to ensure it works:
+7. Login into MySQL to ensure it works:
    
    `sudo mysql -p`
     
@@ -133,7 +133,7 @@ Congrats! you've just launched your first web browser in the clouds.
 
     Use your new password If you changed it to access MySQL server
 
-9. Exit the MySQL console:
+8. Exit the MySQL console:
    
    `mysql> exit`
 
@@ -211,15 +211,15 @@ Congrats! Your new website is now active, but the web root /var/www/projectlamp 
    
    `cd /var/www/projectlamp`
 
-3. Create an index.html file
+2. Create an index.html file
    
    `touch index.html`
 
-4. Open the inde.html file.
+3. Open the inde.html file.
    
    `nano index.html`
 
-5. Copy the following:
+4. Copy the following:
    ```
    <!DOCTYPE html>
    <html lang="en">
@@ -243,7 +243,7 @@ To save the index.html file, use Ctrl + S and Ctrl + X to exit
 
       ![image 24](https://github.com/user-attachments/assets/512cc22d-b8fe-4350-995e-03523859bd54)
 
-7. Now you view your new web page via http://(your-ec2-public-ip)    
+6. Now you view your new web page via http://(your-ec2-public-ip)    
 
      ![image 25](https://github.com/user-attachments/assets/6f06e4a6-eb7c-4e6f-8ae2-007d821c70ad)
 
