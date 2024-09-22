@@ -289,4 +289,4 @@ If you're seeing this page in your browser, It means your PHP installation is wo
    
    ![image 27](https://github.com/user-attachments/assets/79ed993e-d26e-40ac-89bc-e57c9d7cd114)
 
-CONGRATULATIONS, you just finished your first REAL LIFE PROJECT by deploying a LAMP stack in the cloud.
+CONGRATULATIONS!!!!! you just complted your first LAMP web-stack in the cloud.
